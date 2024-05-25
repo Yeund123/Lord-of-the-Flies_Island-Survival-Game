@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Survival Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Island Survival Game</h1>
+        <div id="island-visualization">
+            <img src="island.png" alt="Deserted Island" id="island-img">
+            <div id="decision1" class="decision-bubble" onclick="selectDecision(0)">Decision 1</div>
+            <div id="decision2" class="decision-bubble" onclick="selectDecision(1)">Decision 2</div>
+        </div>
+        <div id="game-area">
+            <p id="game-description">You find yourself stranded on a deserted island. What will you do?</p>
+            <button id="next-btn" onclick="nextDecision()" disabled>Next</button>
+        </div>
+        <div id="consequence"></div>
+        <div id="end-message" class="hidden">The End</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
